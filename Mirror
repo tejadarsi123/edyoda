@@ -1,0 +1,3 @@
+readinput = input()
+for i in range(len(readinput)-1,-1,-1):
+    print(readinput[i], end='')
