@@ -1,0 +1,7 @@
+v = ord('a')
+dictionary = dict()
+
+for i in range(26):
+    dictionary[chr(v)]=v
+    v+=1
+print(dictionary)
