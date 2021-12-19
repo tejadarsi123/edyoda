@@ -8,8 +8,7 @@ for i in range(int(input('list length : '))):
 for i in range(len(dvt)-1):
     for j in range(i,len(dvt)):
         if(dvt[i][len(dvt[i])-1] > dvt[j][len(dvt[j])-1]):
-            y = dvt[i]
-            dvt[i] = dvt[j]
-            dvt[j] = y
+            dvt[i],dvt[j] = dvt[j],dvt[i]
+      
 
 print(dvt)
