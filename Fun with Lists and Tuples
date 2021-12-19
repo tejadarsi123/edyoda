@@ -1,0 +1,15 @@
+dvt = [];
+
+for i in range(int(input('list length : '))):
+    tup1 = tuple(map(int,input('tuple comma seperated values: ').split(',')))
+    dvt.append(tup1)
+    
+
+for i in range(len(dvt)-1):
+    for j in range(i,len(dvt)):
+        if(dvt[i][len(dvt[i])-1] > dvt[j][len(dvt[j])-1]):
+            y = dvt[i]
+            dvt[i] = dvt[j]
+            dvt[j] = y
+
+print(dvt)
