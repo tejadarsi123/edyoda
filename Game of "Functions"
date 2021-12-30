@@ -1,0 +1,9 @@
+def sum_values_of_list(j):
+    sum = 0
+    for i in j:
+        sum+= i
+    return sum
+        
+inputstring = input("enter integers : ").split(',') 
+num_list = list(map(int, inputstring))
+print(sum_values_of_list(num_list))
